@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/mainFragment">
+    <fragment
+            android:id="@+id/mainFragment"
+            android:name="com.techmashinani.filamu.ui.fragments.MainFragment"
+            android:label="main_fragment"
+            tools:layout="@layout/main_fragment">
+        <action
+                android:id="@+id/action_mainFragment_to_movieDetailsFragment"
+                app:destination="@id/movieDetailsFragment"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/movieDetailsFragment"
+            android:name="com.techmashinani.filamu.ui.fragments.MovieDetailsFragment"
+            android:label="fragment_movie_details"
+            tools:layout="@layout/fragment_movie_details">
+
+        <action
+                android:id="@+id/action_movieDetailsFragment_to_actorDetailFragment"
+                app:destination="@id/actorDetailFragment"/>
+
+        <argument android:name="movie"
+                app:argType="com.techmashinani.filamu.model.Movie"/>
+
+    </fragment>
+
+    <fragment
+            android:id="@+id/actorDetailFragment"
+            android:name="com.techmashinani.filamu.ui.fragments.ActorDetailFragment"
+            android:label="fragment_actor_detail"
+            tools:layout="@layout/fragment_actor_detail">
+
+        <argument android:name="actor"
+                app:argType="com.techmashinani.filamu.model.Actor"/>
+    </fragment>
+</navigation>

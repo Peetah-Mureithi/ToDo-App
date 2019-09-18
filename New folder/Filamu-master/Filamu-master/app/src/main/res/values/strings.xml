@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Filamu</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="movie_poster">movie poster</string>
+    <string name="sample_desc">Yes, you were definitely FORCED to take away a star for an app you
+        bought for $5 and have used for six years.
+        There is no way you could have just left it alone. Just sayin’.</string>
+    <string name="username">username</string>
+</resources>
